@@ -23,7 +23,12 @@
     >
     <div id="app">
       <template v-for="item in 200">
-        <img class="img" v-lazy="'./zhang/'+item+'_1650283752559.jpeg'" />
+        <img v-if="item==3" class="img" src="./zhang/2.jpg" />
+        <img
+          v-else
+          class="img"
+          v-lazy="'./zhang/'+item+'_1650290291717.jpeg'"
+        />
       </template>
     </div>
     <script>
