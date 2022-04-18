@@ -1,3 +1,39 @@
-<!DOCTYPE html><html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="./favicon.ico"><title>ya-ui</title><link href="/css/chunk-08ed77a1.c0edfb99.css" rel="prefetch"><link href="/css/chunk-1ad4b0ce.6baaacfa.css" rel="prefetch"><link href="/css/chunk-20b04398.59b59db8.css" rel="prefetch"><link href="/css/chunk-21ff8fe2.0564f50a.css" rel="prefetch"><link href="/css/chunk-3b8163bf.87eb7872.css" rel="prefetch"><link href="/css/chunk-61117214.6f0375f6.css" rel="prefetch"><link href="/css/chunk-6f9efb70.7a2ed0e6.css" rel="prefetch"><link href="/css/chunk-71fd2cb2.c2aad78f.css" rel="prefetch"><link href="/css/chunk-7eb33313.55f52a06.css" rel="prefetch"><link href="/css/chunk-9d880f0e.6bb9dcc5.css" rel="prefetch"><link href="/css/chunk-af548c92.badd6dec.css" rel="prefetch"><link href="/css/chunk-af74a944.4db50595.css" rel="prefetch"><link href="/css/chunk-d359653c.0d5383c5.css" rel="prefetch"><link href="/css/chunk-f4dfd104.0d27244a.css" rel="prefetch"><link href="/css/chunk-fa41c6e0.acf3a529.css" rel="prefetch"><link href="/js/chunk-08ed77a1.8a2c8f20.js" rel="prefetch"><link href="/js/chunk-1ad4b0ce.8feeb10d.js" rel="prefetch"><link href="/js/chunk-20b04398.10afaad3.js" rel="prefetch"><link href="/js/chunk-21ff8fe2.335adf38.js" rel="prefetch"><link href="/js/chunk-3b8163bf.8f50a8be.js" rel="prefetch"><link href="/js/chunk-61117214.37475d73.js" rel="prefetch"><link href="/js/chunk-6f9efb70.db562155.js" rel="prefetch"><link href="/js/chunk-71fd2cb2.4ba5a20c.js" rel="prefetch"><link href="/js/chunk-7eb33313.2cd63887.js" rel="prefetch"><link href="/js/chunk-9d880f0e.e5987f3b.js" rel="prefetch"><link href="/js/chunk-af548c92.39d5de03.js" rel="prefetch"><link href="/js/chunk-af74a944.ab26cc0d.js" rel="prefetch"><link href="/js/chunk-d359653c.2be535a8.js" rel="prefetch"><link href="/js/chunk-f4dfd104.f1c74738.js" rel="prefetch"><link href="/js/chunk-fa41c6e0.b38f6f01.js" rel="prefetch"><link href="/css/ya-demo.80ae3dda.css" rel="preload" as="style"><link href="/js/chunk-vendors.f5d772ee.js" rel="preload" as="script"><link href="/js/ya-demo.ad83d498.js" rel="preload" as="script"><link href="/css/ya-demo.80ae3dda.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but ya-ui doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><style>body {
-      background-color: #f9f8f8;
-    }</style><script src="/js/chunk-vendors.f5d772ee.js"></script><script src="/js/ya-demo.ad83d498.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>私房摄影</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
+    <style type="text/css">
+      .img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript
+      ><strong
+        >We're sorry but ya-ui doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong
+      ></noscript
+    >
+    <div id="app">
+      <template v-for="item in 200">
+        <img class="img" v-lazy="'./zhang/'+item+'_1650283752559.jpeg'" />
+      </template>
+    </div>
+    <script>
+      Vue.use(VueLazyload);
+      var app = new Vue({
+        el: "#app",
+        data: {
+          message: "Hello Vue!",
+        },
+      });
+    </script>
+  </body>
+</html>
