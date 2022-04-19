@@ -12,6 +12,12 @@
       .img {
         width: 100%;
       }
+      .title{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
     </style>
   </head>
   <body>
@@ -24,7 +30,10 @@
     <div id="app">
       <template v-for="item in 8">
         <!-- <div>大傻逼 </div> -->
-        <img v-if="item==8" class="img" src="./zhang/WechatIMG19.jpeg" />
+        <div v-if="item==8">
+          <div class="title">更多你想要的</div>
+          <img class="img" src="./zhang/WechatIMG19.jpeg" />
+        </div>
         <img
           v-else
           class="img"
