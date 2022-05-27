@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" href="./favicon.ico" />
     <title>私房摄影|网红|抖娘|张小姐|可儿儿|</title>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-lazyload/vue-lazyload.js"></script> -->
     <style type="text/css">
       .img {
         width: 100%;
@@ -28,26 +28,15 @@
       ></noscript
     >
     <div id="app">
-      <template v-for="item in 100">
-        <div v-if="item==4">
-          <div class="title">已下更多</div>
-          <img class="img" src="./1.jpg" />
-        </div>
-        <img
-          v-else
-          class="img"
-          v-lazy="'./zhang/'+item+'_1650290952497.jpeg'"
-        /> 
-      </template>
+          <img class="img" src="./img/WechatIMG94.jpeg" />
     </div>
     <script>
-      Vue.use(VueLazyload);
-      var app = new Vue({
-        el: "#app",
-        data: {
-          message: "Hello Vue!",
-        },
-      });
+      // var app = new Vue({
+      //   el: "#app",
+      //   data: {
+      //     message: "Hello Vue!",
+      //   },
+      // });
     </script>
   </body>
 </html>
